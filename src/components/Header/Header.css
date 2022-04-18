@@ -1,0 +1,51 @@
+header {
+    margin-bottom: 1rem;
+    background-color: #1EA4CE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.headerContent {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    flex: 0.4;
+}
+
+.center {
+    display: flex;
+    flex: 0.2;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.center > h1 {
+    display: flex;
+    color: white;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.right {
+    display: flex;
+    flex: 0.4;
+    justify-content: center;
+    align-items: center;
+}
+
+.right > .shoppingCart {
+    padding-right: 6rem;
+}
+
+.right > .shoppingCart > span {
+    color: white;
+    font-weight: bold;
+}

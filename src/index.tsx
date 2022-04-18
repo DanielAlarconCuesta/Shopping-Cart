@@ -1,14 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from 'react-redux'
+
 import App from './components/App/App';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 import reportWebVitals from './reportWebVitals';
+import store from './store';
+import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<Provider store={store}>
+			<Header className="header" />
+			<App className="mainContent" />
+
+			<Footer className="footer" />
+
+		</Provider>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
